@@ -7,7 +7,7 @@ from httpx import ASGITransport, AsyncClient
 from storeapi.main import app
 from storeapi.routers.post import comment_table, post_table
 
-
+# async system to run the test on
 @pytest.fixture(scope="session")  # runs only once in the entire session
 def anyio_backend():
     return "asyncio"
